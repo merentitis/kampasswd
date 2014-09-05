@@ -13,4 +13,3 @@ modparam("auth_db", "calculate_ha1", no)
 modparam("auth_db", "load_credentials", "")
 modparam("auth_db", "use_domain", MULTIDOMAIN)
 
-
