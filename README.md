@@ -1,8 +1,9 @@
 kampasswd
 =========
 
-A PHP script used by kamailio (openSER) subscribers to change their password while using digest authentication with MySQL.
+A PHP script to be used by kamailio (openSER) subscribers to change their password while using digest authentication with MySQL.
 
+Passwords should have been stored as pre-calculated HA1 strings, NOT plain text.
 You should enable ha1 calculation on your kamailio.cfg config file and disable the plain tex password column:
 
 #!ifdef WITH_AUTH
